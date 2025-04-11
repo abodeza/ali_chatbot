@@ -3,7 +3,7 @@ import openai
 import os
 from dotenv import load_dotenv
 
-import assistant, dummy
+import dummy
 
 
 st.title("MOH Bot")
