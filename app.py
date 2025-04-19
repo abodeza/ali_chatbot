@@ -9,7 +9,7 @@ import dummy
 st.title("MOH Bot")
 
 st.write("### Welcome to the AI Chatbot demo!")
-st.write("Please ask the assistant any question related to Ali's work")
+st.write("Please ask the assistant any question related to خدمات الهيئة الطبية العامة بجدة")
 
 # Initialize an OpenAI thread id for the chat
 if "client" not in st.session_state:
