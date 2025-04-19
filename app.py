@@ -8,7 +8,7 @@ import dummy
 
 st.title("MOH Bot")
 
-st.write("### Welcome (Ali and Saeed) to the AI Chatbot demo!")
+st.write("### Welcome to the AI Chatbot demo!")
 st.write("Please ask the assistant any question related to Ali's work")
 
 # Initialize an OpenAI thread id for the chat
@@ -46,7 +46,7 @@ if query := st.chat_input("Type your question here..."):
 
     # Display a funny GIF while the model is thinking
     loading_placeholder = st.empty()
-    loading_placeholder.markdown("![Alt Text](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTBuejBpYTgwYjF5dDdxczFvdGFtYWhyZ2RmOXlqeG1rbXRkZmp5ZSZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/MZQkUm97KTI1gI8sUj/giphy.gif)")
+    loading_placeholder.markdown("Assistant is thinking of a response...")
 
     # Get the assistant's reponse
     response = dummy.get_response(query, st.session_state.thread_id,
